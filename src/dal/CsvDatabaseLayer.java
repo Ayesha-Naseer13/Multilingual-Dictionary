@@ -13,8 +13,8 @@ import dto.DictionaryEntry;
 public class CsvDatabaseLayer {
 
     private static final String URL = "jdbc:mysql://localhost:3306/dictionary";
-    private static final String USER = "root";
-    private static final String PASSWORD = "password";
+    private static final String USER = "user_name";
+    private static final String PASSWORD = "user_password";
 
     public void saveEntries(List<DictionaryEntry> entries) throws SQLException {
         String wordInsertSQL = "INSERT INTO words (word) VALUES (?)";
